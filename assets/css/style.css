@@ -1,0 +1,331 @@
+* {
+  box-sizing: border-box;
+}
+
+/* HEADER STYLES */
+header {
+  display: block;
+  /* justify-content: space-between; */
+  color: #101d94;
+  font-family: 'Rajdhani', sans-serif;
+  text-align: center;
+  padding: 2rem 0 2rem 0;
+
+  background-color: #4f61ff;
+}
+
+header h1 {
+  font-weight: 700;
+  font-size: 5rem;
+  text-shadow: 0.125rem 0.125rem 0.125rem #fff;
+}
+header h4 {
+  font-weight: 600;
+  font-size: 2rem;
+  text-shadow: 0.0625rem 0.0625rem 0.125rem #fff;
+}
+
+/* NAVBAR STYLES */
+nav {
+  display: inline-flexbox;
+}
+
+/* Add a blue background color to the top navigation */
+.topnav {
+  background-color: #101d94;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar and float right*/
+.topnav a {
+  float: right;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 1rem;
+  text-decoration: none;
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 1.5rem;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #e0b92f;
+  color: #101d94;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #4f61ff;
+  color: white;
+}
+
+body::after {
+  content: '';
+  background-image: url(../images/background_2.jpg);
+  background-size: cover;
+  opacity: 1;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: fixed;
+  z-index: -1;
+}
+
+/* ARTICLE STYLES */
+
+#bio {
+  display: none;
+  background: #e0b92f;
+  background-size: cover;
+  border: solid 10px #947401;
+  color: #223a77;
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+  background: #e0b92f;
+  margin: 2rem;
+  max-height: fit-content;
+  padding: 2em;
+}
+
+#bio h2 {
+  color: #947401;
+}
+
+figcaption {
+  display: flex;
+  /* margin-left: 1rem; */
+  font-family: 'Rajdhani', sans-serif;
+  color: black;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+/* WORK SECTION STYLES */
+section {
+  display: flex;
+  flex-direction: row;
+}
+
+h2 {
+  /* flex: 1 0 auto; */
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 3rem;
+  font-weight: bold;
+  color: white;
+}
+
+aside {
+  color: white;
+}
+
+/* aside h2 {
+    margin: 2rem;
+} */
+/* BACKGROUND IMAGES AND HEADER STYLES FOR WORK PANELS */
+.row {
+  margin: 2rem;
+}
+.html-css {
+  height: 45rem;
+  background-image: url('../images/work_html-css-2.jpg');
+  background-size: cover;
+  background-position: top;
+  border: solid 10px #101d94;
+  align-items: center;
+}
+
+h3 {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 4rem;
+  font-weight: 700;
+  text-shadow: 0.25rem 0.25rem 1rem #000;
+  text-align: center;
+  align-items: center;
+}
+
+.html-css a {
+  color: white;
+}
+
+.html-css a:hover {
+  color: red;
+}
+.mern {
+  height: 40rem;
+  background-image: url('../images/work_mernstack.jpg');
+  background-size: cover;
+  background-position: top;
+  border: solid 10px #4f61ff;
+  align-items: center;
+}
+
+.mern a:hover {
+  color: red;
+}
+
+.javascript {
+  height: 40rem;
+  background-image: url('../images/work_javascript.jpg');
+  background-size: cover;
+  background-position: top;
+  align-items: center;
+  /* border: solid 10px #e0b92f; */
+  opacity: 1;
+}
+
+#jscript {
+  margin: 1rem;
+}
+
+#btnJS {
+  color: white;
+  background: none;
+}
+
+#btnJS h3 {
+  text-shadow: 0.5rem 0.5rem 1rem black;
+}
+button.hidden {
+  display: none;
+}
+
+/* FOOTER STYLES */
+
+footer {
+  background: #4f61ff;
+  border: solid #101d94 0.25rem;
+  padding: 10px;
+  clear: both;
+  font-family: 'Rajdhani', sans-serif;
+  text-align: center;
+}
+
+footer h3 {
+  font-size: 3rem;
+  font-weight: 400;
+  text-shadow: none;
+}
+
+footer a {
+  color: white;
+}
+
+footer a:hover {
+  color: red;
+}
+
+footer p {
+  font-size: 2rem;
+  text-align: center;
+}
+
+/* ----------- iPhone 4 and 4S ----------- */
+
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+  header {
+    margin: 0rem;
+  }
+  header h1 {
+    font-size: 2.5rem;
+  }
+  header h4 {
+    font-size: 1rem;
+  }
+  .topnav a {
+    font-size: 0.75rem;
+  }
+  section {
+    flex-direction: column;
+  }
+  h3 {
+    font-size: 2rem;
+  }
+  .row {
+    margin: 1rem 0.25rem;
+    padding: .5rem;
+  }
+  #jscript {
+    height: 10rem;
+    margin: 0rem;
+  }
+  img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+  footer {
+    padding: 1rem;
+  }
+  footer h3 {
+    font-size: 1.5rem;
+  }
+  footer p {
+    font-size: 1rem;
+  }
+}
+
+/* Portrait */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+}
+
+/* Landscape */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+}
+
+/* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
+
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
+}
+
+/* Portrait */
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+}
+
+/* Landscape */
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+}
+
+/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
+
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
+}
+
+/* Portrait */
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+}
+
+/* Landscape */
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+}
+
+/* ----------- iPhone 6+, 7+ and 8+ ----------- */
+
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) {
+}
+
+/* Portrait */
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
+}
+
+/* Landscape */
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
+}
+
+/* ----------- iPhone X ----------- */
+
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
+}
+
+/* Portrait */
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
+}
+
+/* Landscape */
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
+}
