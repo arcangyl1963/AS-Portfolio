@@ -1,8 +1,8 @@
-# Week2_MyPortfolioPage
+# AS-Portfolio
 
 ## Description
 
-The assignment here was to design a portfolio page to showcase web applications and projects created during this course. This one was considerably more challenging to meet all the criteria. I focused initially on outlining the structures and color theme for the page before writing any code. I researched some of the technologies for CSS that were to be used prior to and during the coding process. I believe I was able to meet the assignment requirements.
+Updated more polished design to my portfolio page. 
 
 ## Installation
 

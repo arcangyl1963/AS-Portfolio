@@ -36,11 +36,11 @@
 
         <!-- NAVBAR START -->
         <nav>
-            <div class="topnav">
-                <a id="resumeBtn" href="https://www.linkedin.com/in/artboyatl/">Resume</a>
-                <a id="contactBtn" href="#contact">Contact Me</a>
+            <div class="topnav" id="navbar">
+                <a id="resumeBtn" href="https://www.linkedin.com/in/artboyatl/" target="_blank">Resume</a>
+                <a id="contactBtn" href="#contact">Contact</a>
                 <a id="workBtn" href="#work">Work</a>
-                <a id="aboutBtn" class="active" href="#bio">About</a>
+                <a id="aboutBtn" class="about" href="#bio">About</a>
             </div>
         </nav>
         <!-- NAVBAR END -->
@@ -52,8 +52,10 @@
 
                 <article id="bio" class="col-md-12">
                     <h2>About AS</h2>
-                    <!-- <img src="./assets/images/jim_headshot_avatar.jpg" alt="Headshot of James Harris">
-                                    <figcaption>James Harris</figcaption> -->
+                    <figure>
+                    <img src="./assets/images/jim_headshot_avatar.jpg" alt="Headshot of James Harris">
+                    <figcaption>James Harris</figcaption>
+                    </figure>
                     <p> Arcangyl Studios (AS) is simply... James Harris. Founded as a freelance design co-op in Huntsville, Alabama in the mid 1990's, AS is now a one-man web development studio based out of Atlanta, Georgia.</p>
                     <p>After 20 plus years in the Information Technology field working for magazine and newspaper publishers, Mr. Harris has moved on to web development and UX/UI design.</p>
                     <p>Mr. Harris is currently enrolled as a participant in the Full Stack Flex Bootcamp course through the Georgia
@@ -61,27 +63,33 @@
                     HTML, CSS, Javascript, JQuery, Node.js, and more. With these skills he hopes to improve and add to his body of work produced thus far.</p>
                 </article>
                 <aside id="work" class="col-md-12">
-                    <!-- <h2 id="work">Work</h2> -->
                     <div class="row html-css">
-                        <h3><a href="https://arcangyl1963.github.io/HOMEWK-01-HTML-GIT-CSS/">Projects: HTML & CSS</a>
-                        </h3>
-                    </div>
-                    <div class="row mern">
-                        <h3>Projects: MERN Stacks</h3>
+                        <button id="btnHC"><h3>HTML & CSS</h3></button>
+                        <p class="tpbutton btn-toolbar text-center">
+                            <a class="btn navbar-btn hidden" id="htmlCSS" href="https://arcangyl1963.github.io/HOMEWK-01-HTML-GIT-CSS/" target="_blank"><img class="hc-img" src="./assets/images/coding-challenge.png"></a>
+                        </p>
                     </div>
                     <div class="row javascript">
                         <button id="btnJS">
-                        <h3>Projects: Javascript</h3></button>
-                        <button class="col-md-3 hidden" id="jscript"><a href="https://arcangyl1963.github.io/WK3-Password-Generator/" target="_blank"><img class="js-img" src="./assets/images/password-generator-app.jpg"></a></button>
+                        <h3>Javascript</h3></button>
+                        <p class="tpbutton btn-toolbar text-center">
+                            <a class="btn navbar-btn hidden" id="jscript" href="https://arcangyl1963.github.io/weather-dashboard-app/" target="_blank"><img class="js-img" src="./assets/images/weather-dashboard.png"></a>
+                        </p>
                     </div>
-
+                    <div class="row proj">
+                        <button id="btnProj">
+                        <h3>Projects</h3></button>
+                        <p class="tpbutton btn-toolbar text-center">
+                            <a class="btn navbar-btn hidden" id="projects" href="https://arcangyl1963.github.io/News-Flash/" target="_blank"><img class="proj-img" src="./assets/images/News_Flash.png"></a>
+                        </p>
+                    </div>
                 </aside>
             </section>
         </main>
 
 
         <footer>
-            <h3 id="contact">Contact Me: <span><a href="mailto:artboyatl@gmail.com">Email</a> • 404.441.3269 <a
+            <h3 id="contact">Contact: <span><a href="mailto:artboyatl@gmail.com">Email</a> • 404.441.3269 <a
                         href="https://github.com/arcangyl1963/">GitHub</a></span></h3>
             <p>&copy; 2021 James Harris</p>
         </footer>
