@@ -65,6 +65,14 @@ nav {
   color: white;
 }
 
+.topnav .fa-linkedin {
+  color: white;
+}
+
+.topnav .fa-linkedin:hover {
+  color: #4f61ff;
+}
+
 .sticky {
   position: fixed;
   width: 100%;
