@@ -27,6 +27,9 @@ header h4 {
 header a {
   color: #4f61ff;
 }
+header a:hover {
+  color: white;
+}
 
 /* NAVBAR STYLES */
 nav {
@@ -260,7 +263,8 @@ footer p {
     font-size: 1rem;
   }
   .topnav a {
-    font-size: 0.75rem;
+    font-size: .75rem;
+    padding: .5rem;
   }
   section {
     flex-direction: column;
@@ -313,6 +317,11 @@ footer p {
 
 /* Portrait and Landscape */
 @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
+  .topnav a {
+    font-size: 0.75rem;
+    padding: .5rem;
+  }
+  
   #bio {
     font-size: 1rem;
   }
@@ -327,6 +336,10 @@ footer p {
 
 /* Portrait and Landscape */
 @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
+  .topnav a {
+    font-size: 1rem;
+    padding: .5rem;
+  }
   #bio {
     font-size: 1rem;
   }
@@ -336,6 +349,10 @@ footer p {
   figcaption {
     font-size: 1rem;
   }
+  .html-css, .proj,
+  .javascript {
+  height: 35rem;
+}
 /* ----------- iPhone 6+, 7+ and 8+ ----------- */
 
 /* Portrait and Landscape */
@@ -349,14 +366,10 @@ footer p {
   figcaption {
     font-size: 1.25rem;
   }
+  .html-css, .proj,
+  .javascript {
+  height: 39rem;
 }
-
-/* Portrait */
-@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
-}
-
-/* Landscape */
-@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
 }
 
 /* ----------- iPhone X ----------- */
