@@ -6,23 +6,26 @@
 header {
   display: block;
   /* justify-content: space-between; */
-  color: #101d94;
+  color: #4f61ff;
   font-family: 'Rajdhani', sans-serif;
   text-align: center;
   padding: 2rem 0 2rem 0;
 
-  background-color: #4f61ff;
+  /* background-color: transparent; */
 }
 
 header h1 {
   font-weight: 700;
   font-size: 5rem;
-  text-shadow: 0.125rem 0.125rem 0.125rem #fff;
+  text-shadow: 0.5rem 0.5rem 0.75rem black;
 }
 header h4 {
   font-weight: 600;
   font-size: 2rem;
-  text-shadow: 0.0625rem 0.0625rem 0.125rem #fff;
+  text-shadow: 0.125rem 0.125rem 0.25rem black;
+}
+header a {
+  color: #4f61ff;
 }
 
 /* NAVBAR STYLES */
@@ -32,31 +35,43 @@ nav {
 
 /* Add a blue background color to the top navigation */
 .topnav {
-  background-color: #101d94;
+  background-color: #4f61ff;
   overflow: hidden;
+  position: -webkit-sticky;
 }
 
 /* Style the links inside the navigation bar and float right*/
 .topnav a {
   float: right;
+  display: block;
   color: #f2f2f2;
   text-align: center;
   padding: 1rem;
   text-decoration: none;
   font-family: 'Rajdhani', sans-serif;
-  font-size: 1.5rem;
+  font-weight: 600;
+  font-size: 2rem;
 }
 
 /* Change the color of links on hover */
 .topnav a:hover {
   background-color: #e0b92f;
-  color: #101d94;
+  color: #4f61ff;
 }
 
 /* Add a color to the active/current link */
 .topnav a.active {
-  background-color: #4f61ff;
+  background-color: #101d94;
   color: white;
+}
+
+.sticky {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 100;
+  border-top: 0;
 }
 
 body::after {
@@ -78,28 +93,35 @@ body::after {
   display: none;
   background: #e0b92f;
   background-size: cover;
-  border: solid 10px #947401;
+  box-shadow: 0 5px 10px black;
   color: #223a77;
   font-family: 'Cormorant Garamond', serif;
   font-weight: 700;
-  font-size: 1.5rem;
+  font-size: 1.75rem;
   background: #e0b92f;
-  margin: 2rem;
-  max-height: fit-content;
+  margin: .25rem;
+  /* max-height: fit-content; */
   padding: 2em;
+  align-items: center;
+  justify-content: center;
 }
 
 #bio h2 {
   color: #947401;
 }
+figure {
+  float: left;
+}
+#bio img {
+  margin-right: 1.5rem;
+  margin-bottom: 1rem;
+}
 
 figcaption {
-  display: flex;
-  /* margin-left: 1rem; */
   font-family: 'Rajdhani', sans-serif;
   color: black;
   font-weight: bold;
-  font-size: 1rem;
+  font-size: 1.5rem;
 }
 
 /* WORK SECTION STYLES */
@@ -109,7 +131,6 @@ section {
 }
 
 h2 {
-  /* flex: 1 0 auto; */
   font-family: 'Rajdhani', sans-serif;
   font-size: 3rem;
   font-weight: bold;
@@ -117,7 +138,7 @@ h2 {
 }
 
 aside {
-  color: white;
+  color: #101d94;
 }
 
 /* aside h2 {
@@ -125,69 +146,57 @@ aside {
 } */
 /* BACKGROUND IMAGES AND HEADER STYLES FOR WORK PANELS */
 .row {
+  display: inline-flexbox;
   margin: 2rem;
 }
-.html-css {
+.html-css, .proj,
+.javascript {
   height: 45rem;
-  background-image: url('../images/work_html-css-2.jpg');
   background-size: cover;
   background-position: top;
-  border: solid 10px #101d94;
-  align-items: center;
+  box-shadow: 0 1rem 2rem black;
+}
+
+.html-css {
+  background-image: url('../images/work_html-css_85.jpg');
+}
+.proj {
+  background-image: url('../images/work_mernstack.jpg');
+}
+
+.javascript {
+background-image: url('../images/work_javascript_85.jpg');
+}
+
+.hc-img, .js-img,
+.proj-img {
+  box-shadow: 0 1.5rem 2rem black;
+}
+
+#htmlCSS,
+#jscript,
+#projects {
+  margin: 0 auto;
+}
+
+#btnJS,
+#btnHC,
+#btnProj {
+  color: white;
+  background: none;
+  border: none;
 }
 
 h3 {
   font-family: 'Rajdhani', sans-serif;
-  font-size: 4rem;
+  font-size: 7rem;
   font-weight: 700;
-  text-shadow: 0.25rem 0.25rem 1rem #000;
+  text-shadow: .5rem .5rem 1rem black;
   text-align: center;
   align-items: center;
 }
 
-.html-css a {
-  color: white;
-}
-
-.html-css a:hover {
-  color: red;
-}
-.mern {
-  height: 40rem;
-  background-image: url('../images/work_mernstack.jpg');
-  background-size: cover;
-  background-position: top;
-  border: solid 10px #4f61ff;
-  align-items: center;
-}
-
-.mern a:hover {
-  color: red;
-}
-
-.javascript {
-  height: 40rem;
-  background-image: url('../images/work_javascript.jpg');
-  background-size: cover;
-  background-position: top;
-  align-items: center;
-  /* border: solid 10px #e0b92f; */
-  opacity: 1;
-}
-
-#jscript {
-  margin: 1rem;
-}
-
-#btnJS {
-  color: white;
-  background: none;
-}
-
-#btnJS h3 {
-  text-shadow: 0.5rem 0.5rem 1rem black;
-}
-button.hidden {
+a.hidden {
   display: none;
 }
 
@@ -240,17 +249,35 @@ footer p {
   section {
     flex-direction: column;
   }
+  #bio {
+    font-size: 1rem;
+  }
+  #bio img {
+    height: 19rem;
+  }
+  figcaption {
+    font-size: 1rem;
+  }
+
   h3 {
-    font-size: 2rem;
+    font-size: 3rem;
+    text-shadow: .25rem .25rem .75rem black;
   }
   .row {
     margin: 1rem 0.25rem;
     padding: .5rem;
   }
-  #jscript {
-    height: 10rem;
+  .html-css, .proj,
+  .javascript {
+  height: 30rem;
+}
+  #jscript, #htmlCSS,
+  #projects {
+    height: 30rem;
     margin: 0rem;
   }
+
+  
   img {
     max-width: 100%;
     max-height: 100%;
