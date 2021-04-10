@@ -17,10 +17,12 @@ $(document).ready (function () {
         $('#jscript').toggle();
     });
     $('#btnHC').click(function(event){
-        $('#htmlCSS').toggle();
+        $('#htmlCSS1').toggle();
+        $('#htmlCSS2').toggle();
     });
     $('#btnProj').click(function(event){
         $('#projects').toggle();
+        $('.projTitle').toggle();
     });
     $('#aboutBtn').click(function () {
         $('#bio').show();
@@ -29,6 +31,7 @@ $(document).ready (function () {
         $('#workBtn').css('background-color', '');
         $('#contactBtn').css('background-color', '');
         $('#resumeBtn').css('background-color', '');
+        $('#inBtn').css('background-color', '');
     });
     $('#workBtn').click(function () {
         $('#bio').hide();
@@ -37,19 +40,31 @@ $(document).ready (function () {
         $('#aboutBtn').css('background-color', '');
         $('#contactBtn').css('background-color', '');
         $('#resumeBtn').css('background-color', '');
+        $('#inBtn').css('background-color', '');
     });
     $('#contactBtn').click(function () {
         $('#bio').hide();
         $('#work').show();
-       $(this).css('background-color', '#101d94');
+        $(this).css('background-color', '#101d94');
         $('#aboutBtn').css('background-color', '');
         $('#workBtn').css('background-color', '');
         $('#resumeBtn').css('background-color', '');
+        $('#inBtn').css('background-color', '');
     });
     $('#resumeBtn').click(function () {
         $('#bio').hide();
         $('#work').show();
-       $(this).css('background-color', '#101d94');
+        $(this).css('background-color', '#101d94');
+        $('#inBtn').css('background-color', '');
+        $('#aboutBtn').css('background-color', '');
+        $('#workBtn').css('background-color', '');
+        $('#contactBtn').css('background-color', '');
+    });
+    $('#inBtn').click(function () {
+        $('#bio').hide();
+        $('#work').show();
+        $(this).css('background-color', '#101d94');
+        $('#resumeBtn').css('background-color', '');
         $('#aboutBtn').css('background-color', '');
         $('#workBtn').css('background-color', '');
         $('#contactBtn').css('background-color', '');

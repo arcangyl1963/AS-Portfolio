@@ -33,7 +33,7 @@ nav {
   display: inline-flexbox;
 }
 
-/* Add a blue background color to the top navigation */
+/* Add sticky CSS for the navbar */
 .topnav {
   background-color: #4f61ff;
   overflow: hidden;
@@ -86,9 +86,7 @@ body::after {
   position: fixed;
   z-index: -1;
 }
-
-/* ARTICLE STYLES */
-
+/* ARTICLE BIO STYLES */
 #bio {
   display: none;
   background: #e0b92f;
@@ -140,10 +138,6 @@ h2 {
 aside {
   color: #101d94;
 }
-
-/* aside h2 {
-    margin: 2rem;
-} */
 /* BACKGROUND IMAGES AND HEADER STYLES FOR WORK PANELS */
 .row {
   display: inline-flexbox;
@@ -155,6 +149,8 @@ aside {
   background-size: cover;
   background-position: top;
   box-shadow: 0 1rem 2rem black;
+  /* align-items: center;
+  justify-content: space-evenly; */
 }
 
 .html-css {
@@ -162,6 +158,7 @@ aside {
 }
 .proj {
   background-image: url('../images/work_mernstack.jpg');
+  text-align: center;
 }
 
 .javascript {
@@ -175,7 +172,7 @@ background-image: url('../images/work_javascript_85.jpg');
 
 #htmlCSS,
 #jscript,
-#projects {
+#projects p {
   margin: 0 auto;
 }
 
@@ -187,6 +184,15 @@ background-image: url('../images/work_javascript_85.jpg');
   border: none;
 }
 
+.projTitle {
+  text-shadow: .25rem .25rem .5rem black;
+  font-size: 2rem;
+}
+
+.projTitle.hidden {
+  display: none;
+}
+
 h3 {
   font-family: 'Rajdhani', sans-serif;
   font-size: 7rem;
@@ -195,43 +201,45 @@ h3 {
   text-align: center;
   align-items: center;
 }
-
+/* Hide the project image panels by default */
 a.hidden {
   display: none;
+  margin: 0 auto;
 }
 
 /* FOOTER STYLES */
 
 footer {
-  background: #4f61ff;
-  border: solid #101d94 0.25rem;
-  padding: 10px;
+  padding: .5rem;
   clear: both;
   font-family: 'Rajdhani', sans-serif;
   text-align: center;
 }
 
 footer h3 {
+  color: #4f61ff;
   font-size: 3rem;
-  font-weight: 400;
+  font-weight: 600;
   text-shadow: none;
 }
+.fa-envelope, .fa-github,
+.fa-linkedin {
+  color: #4f61ff;
+}
 
-footer a {
+.fa-envelope:hover,
+.fa-github:hover, 
+.fa-linkedin:hover {
   color: white;
 }
 
-footer a:hover {
-  color: red;
-}
-
 footer p {
+  color: #4f61ff;
   font-size: 2rem;
   text-align: center;
 }
-
-/* ----------- iPhone 4 and 4S ----------- */
-
+/* Media queries for mobile devices */
+/* ----------- iPhone 4 and 4S ----------- *
 /* Portrait and Landscape */
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
   header {
@@ -293,46 +301,46 @@ footer p {
   }
 }
 
-/* Portrait */
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
-}
-
-/* Landscape */
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
-}
-
 /* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
 
 /* Portrait and Landscape */
 @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
+  #bio {
+    font-size: 1rem;
+  }
+  #bio img {
+    height: 19rem;
+  }
+  figcaption {
+    font-size: 1rem;
+  }
 }
-
-/* Portrait */
-@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
-}
-
-/* Landscape */
-@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
-}
-
 /* ----------- iPhone 6, 6S, 7 and 8 ----------- */
 
 /* Portrait and Landscape */
 @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
-}
-
-/* Portrait */
-@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
-}
-
-/* Landscape */
-@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
-}
-
+  #bio {
+    font-size: 1rem;
+  }
+  #bio img {
+    height: 22rem;
+  }
+  figcaption {
+    font-size: 1rem;
+  }
 /* ----------- iPhone 6+, 7+ and 8+ ----------- */
 
 /* Portrait and Landscape */
 @media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) {
+  #bio {
+    font-size: 1.5rem;
+  }
+  #bio img {
+    height: 24rem;
+  }
+  figcaption {
+    font-size: 1.25rem;
+  }
 }
 
 /* Portrait */
@@ -355,4 +363,5 @@ footer p {
 
 /* Landscape */
 @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
+}
 }
