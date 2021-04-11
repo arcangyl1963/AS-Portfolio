@@ -34,6 +34,7 @@ header a:hover {
 /* NAVBAR STYLES */
 nav {
   display: inline-flexbox;
+  margin-bottom: 2rem;
 }
 
 /* Add sticky CSS for the navbar */
@@ -108,7 +109,8 @@ body::after {
   font-weight: 700;
   font-size: 1.75rem;
   background: #e0b92f;
-  margin: .25rem;
+  max-width: 70%;
+  margin: 0 auto;
   /* max-height: fit-content; */
   padding: 2em;
   align-items: center;
@@ -145,13 +147,8 @@ h2 {
   font-weight: bold;
   color: white;
 }
-
-aside {
-  color: #101d94;
-}
 /* BACKGROUND IMAGES AND HEADER STYLES FOR WORK PANELS */
 .row {
-  display: inline-flexbox;
   margin: 2rem;
 }
 .html-css, .proj,
@@ -160,8 +157,6 @@ aside {
   background-size: cover;
   background-position: top;
   box-shadow: 0 1rem 2rem black;
-  /* align-items: center;
-  justify-content: space-evenly; */
 }
 
 .html-css {
@@ -206,18 +201,18 @@ h5 {
   color: #4f61ff;
   text-shadow: .125rem .125rem .25rem black;
 }
-
+h5 a:hover {
+  color: #e0b92f;
+}
 .hc-img, .js-img,
 .proj-img {
   box-shadow: 0 1.5rem 2rem black;
 }
-
 #htmlCSS,
 #jscript,
-#projects p {
+#projects {
   margin: 0 auto;
 }
-
 #btnJS,
 #btnHC,
 #btnProj {
@@ -225,16 +220,19 @@ h5 {
   background: none;
   border: none;
 }
-
 .projTitle {
   text-shadow: .25rem .25rem .5rem black;
   font-size: 2rem;
 }
-
+.projTitle a {
+  color: white;
+}
+.projTitle a:hover {
+  color: #e0b92f;
+}
 .projTitle.hidden {
   display: none;
 }
-
 h3 {
   font-family: 'Rajdhani', sans-serif;
   font-size: 7rem;
@@ -248,9 +246,7 @@ a.hidden {
   display: none;
   margin: 0 auto;
 }
-
 /* FOOTER STYLES */
-
 footer {
   padding: .5rem;
   clear: both;
@@ -288,7 +284,7 @@ footer p {
     margin: 0rem;
   }
   header h1 {
-    font-size: 2.5rem;
+    font-size: 1rem;
   }
   header h4 {
     font-size: 1rem;
@@ -302,9 +298,10 @@ footer p {
   }
   #bio {
     font-size: 1rem;
+    max-width: 90%;
   }
-  #bio img {
-    height: 19rem;
+  figure img {
+    max-height: 17rem;
   }
   figcaption {
     font-size: 1rem;
@@ -315,21 +312,39 @@ footer p {
     text-shadow: .25rem .25rem .75rem black;
   }
   .row {
-    margin: 1rem 0.25rem;
-    padding: .5rem;
+    margin: 1rem;
+    padding: .125rem;
   }
   .html-css, .proj,
-  .javascript {
+  .javascript, .row {
   height: 30rem;
 }
   #jscript, #htmlCSS,
   #projects {
     height: 30rem;
-    margin: 0rem;
+  }
+  .tpbutton {
+    margin: 0 auto;
+  }
+
+  .htmTitle {
+    position: absolute;
+    top: 8rem;
+    left: 4rem;
+  }
+  .jscTitle {
+    position: absolute;
+    top: 9rem;
+    left: 4rem;
+  }
+  h5 {
+    font-size: 1rem;
+    text-shadow: .125rem .125rem .25rem black;
   }
 
   
   img {
+    margin: 0 auto;
     max-width: 100%;
     max-height: 100%;
   }
@@ -375,7 +390,7 @@ footer p {
     font-size: 1rem;
   }
   #bio img {
-    height: 22rem;
+    max-height: 19rem;
   }
   figcaption {
     font-size: 1rem;
@@ -392,7 +407,7 @@ footer p {
     font-size: 1.5rem;
   }
   #bio img {
-    height: 24rem;
+    max-height: 24rem;
   }
   figcaption {
     font-size: 1.25rem;
