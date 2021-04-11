@@ -175,6 +175,37 @@ aside {
 .javascript {
 background-image: url('../images/work_javascript_85.jpg');
 }
+.htm {
+  margin: 0 auto;
+  position: relative;
+}
+.htm.hidden {
+  display: none;
+}
+.htmTitle {
+  position: absolute;
+  top: 15rem;
+  left: 7rem;
+}
+.jsc {
+  margin: 0 auto;
+  position: relative;
+}
+.jsc.hidden {
+  display: none;
+}
+.jscTitle {
+  position: absolute;
+  top: 18rem;
+  left: 7rem;
+}
+h5 {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #4f61ff;
+  text-shadow: .125rem .125rem .25rem black;
+}
 
 .hc-img, .js-img,
 .proj-img {

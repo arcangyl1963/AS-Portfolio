@@ -15,10 +15,13 @@ $(document).ready (function () {
     });
     $('#btnJS').click(function(event){
         $('#jscript').toggle();
+        $('#jsName1').toggle();
     });
     $('#btnHC').click(function(event){
         $('#htmlCSS1').toggle();
         $('#htmlCSS2').toggle();
+        $('#htmName1').toggle();
+        $('#htmName2').toggle();
     });
     $('#btnProj').click(function(event){
         $('#projects').toggle();
