@@ -1,5 +1,6 @@
 
 $(document).ready (function () {
+    // sticky navbar function
     var stickyNavTop = $('.topnav').offset().top;
     var stickyNav = function () {
         var scrollTop = $(window).scrollTop();
@@ -13,6 +14,7 @@ $(document).ready (function () {
     $(window).scroll(function() {
         stickyNav();
     });
+    // toggle and show/hide functions for the work projects section button behavior
     $('#btnJS').click(function(event){
         $('#jscript').toggle();
         $('#jsName1').toggle();
@@ -27,6 +29,7 @@ $(document).ready (function () {
         $('#projects').toggle();
         $('.projTitle').toggle();
     });
+    // functions for the active navbar button behavior
     $('#aboutBtn').click(function () {
         $('#bio').show();
         $('#work').hide();

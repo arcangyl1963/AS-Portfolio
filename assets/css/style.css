@@ -1,7 +1,6 @@
 * {
   box-sizing: border-box;
 }
-
 /* HEADER STYLES */
 header {
   display: block;
@@ -13,7 +12,6 @@ header {
 
   /* background-color: transparent; */
 }
-
 header h1 {
   font-weight: 700;
   font-size: 5rem;
@@ -30,20 +28,17 @@ header a {
 header a:hover {
   color: white;
 }
-
 /* NAVBAR STYLES */
 nav {
   display: inline-flexbox;
   margin-bottom: 2rem;
 }
-
 /* Add sticky CSS for the navbar */
 .topnav {
   background-color: #4f61ff;
   overflow: hidden;
   position: -webkit-sticky;
 }
-
 /* Style the links inside the navigation bar and float right*/
 .topnav a {
   float: right;
@@ -56,27 +51,23 @@ nav {
   font-weight: 600;
   font-size: 2rem;
 }
-
 /* Change the color of links on hover */
 .topnav a:hover {
   background-color: #e0b92f;
   color: #4f61ff;
 }
-
 /* Add a color to the active/current link */
 .topnav a.active {
   background-color: #101d94;
   color: white;
 }
-
 .topnav .fa-linkedin {
   color: white;
 }
-
 .topnav .fa-linkedin:hover {
   color: #4f61ff;
 }
-
+/* styling for the sticky navbar */
 .sticky {
   position: fixed;
   width: 100%;
@@ -85,7 +76,7 @@ nav {
   z-index: 100;
   border-top: 0;
 }
-
+/* body styles */
 body::after {
   content: '';
   background-image: url(../images/background_2.jpg);
@@ -116,7 +107,6 @@ body::after {
   align-items: center;
   justify-content: center;
 }
-
 #bio h2 {
   color: #947401;
 }
@@ -127,27 +117,24 @@ figure {
   margin-right: 1.5rem;
   margin-bottom: 1rem;
 }
-
 figcaption {
   font-family: 'Rajdhani', sans-serif;
   color: black;
   font-weight: bold;
   font-size: 1.5rem;
 }
-
 /* WORK SECTION STYLES */
 section {
   display: flex;
   flex-direction: row;
 }
-
 h2 {
   font-family: 'Rajdhani', sans-serif;
   font-size: 3rem;
   font-weight: bold;
   color: white;
 }
-/* BACKGROUND IMAGES AND HEADER STYLES FOR WORK PANELS */
+/* BACKGROUND IMAGES AND HEADER STYLES FOR WORK PROJECT PANELS */
 .row {
   margin: 2rem;
 }
@@ -158,7 +145,6 @@ h2 {
   background-position: top;
   box-shadow: 0 1rem 2rem black;
 }
-
 .html-css {
   background-image: url('../images/work_html-css_85.jpg');
 }
@@ -166,7 +152,6 @@ h2 {
   background-image: url('../images/work_mernstack.jpg');
   text-align: center;
 }
-
 .javascript {
 background-image: url('../images/work_javascript_85.jpg');
 }
@@ -252,7 +237,6 @@ footer {
   font-family: 'Rajdhani', sans-serif;
   text-align: center;
 }
-
 footer h3 {
   color: #4f61ff;
   font-size: 3rem;
@@ -263,13 +247,11 @@ footer h3 {
 .fa-linkedin {
   color: #4f61ff;
 }
-
 .fa-envelope:hover,
 .fa-github:hover, 
 .fa-linkedin:hover {
   color: white;
 }
-
 footer p {
   color: #4f61ff;
   font-size: 2rem;
@@ -305,7 +287,6 @@ footer p {
   figcaption {
     font-size: 1rem;
   }
-
   h3 {
     font-size: 3rem;
     text-shadow: .25rem .25rem .75rem black;
@@ -356,16 +337,13 @@ footer p {
     font-size: 1rem;
   }
 }
-
 /* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
-
 /* Portrait and Landscape */
 @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
   .topnav a {
     font-size: 0.75rem;
     padding: .5rem;
   }
-  
   #bio {
     font-size: 1rem;
   }
@@ -412,7 +390,6 @@ h5 {
   text-shadow: .125rem .125rem .25rem black;
 }
 /* ----------- iPhone 6+, 7+ and 8+ ----------- */
-
 /* Portrait and Landscape */
 @media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) {
   #bio {
@@ -442,19 +419,5 @@ h5 {
   font-size: 1rem;
   text-shadow: .125rem .125rem .25rem black;
 }
-}
-
-/* ----------- iPhone X ----------- */
-
-/* Portrait and Landscape */
-@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
-}
-
-/* Portrait */
-@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
-}
-
-/* Landscape */
-@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
 }
 }
